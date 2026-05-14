@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Urban Fanny restaurant discovery and reservation platform">
+  <title>Recommend | Urban Fanny</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><img src="images/logo.svg" alt="Urban Fanny logo"><span>Urban Fanny</span></a>
+  <nav aria-label="Main navigation">
+    <a href="index.html" data-page="index">Home</a>
+    <a href="restaurants.html" data-page="restaurants">Restaurants</a>
+    <a href="recommend.html" data-page="recommend" class="active">Recommend</a>
+    <a href="register.html" data-page="register">Register</a>
+    <a href="reservation.html" data-page="reservation">Reserve</a>
+    <a href="bill.html" data-page="bill">Bill</a>
+  </nav>
+</header>
+
+<main class="recommend-page">
+  <section class="recommend-hero">
+    <p class="section-kicker">Smart Restaurant Match</p>
+    <h1>Find your best restaurant</h1>
+    <p>Choose your dietary or food preference, budget range and dining purpose. The system uses rule-based JavaScript to recommend the best matching restaurant.</p>
+  </section>
+
+  <section class="recommend-form-wrap">
+    <form id="recommendForm" class="recommend-form">
+      <label for="foodType">Dietary / Food Preference</label>
+      <select id="foodType" name="foodType" required>
+        <option value="">Select preference</option>
+        <option value="halal">Halal / Mandi / Biriyani</option>
+        <option value="veg">Vegetarian / Veg</option>
+        <option value="seafood">Sea Food</option>
+        <option value="premium">Premium Dining</option>
+        <option value="fastfood">Fast Food</option>
+        <option value="sweetcold">Sweet & Cold</option>
+      </select>
+
+      <label for="budget">Budget Rate</label>
+      <select id="budget" name="budget" required>
+        <option value="">Select budget</option>
+        <option value="budget">Budget Friendly</option>
+        <option value="medium">Medium Price</option>
+        <option value="premium">Premium Price</option>
+      </select>
+
+      <label for="purpose">Dining Purpose</label>
+      <select id="purpose" name="purpose" required>
+        <option value="">Select purpose</option>
+        <option value="student">Student / Quick Meal</option>
+        <option value="family">Family / Group Dining</option>
+        <option value="date">Date / Premium Dining</option>
+        <option value="comfort">Comfort Food</option>
+        <option value="dessert">Dessert / Drinks</option>
+      </select>
+
+      <button type="submit" class="btn">Get Recommendation</button>
+    </form>
+
+    <div id="recommendResult" class="recommend-result">
+      <h2>Your recommendation will appear here</h2>
+      <p>Select your options and press the button.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Urban Fanny. Student project for COS10005 Web Development.</p>
+</footer>
+
+
+
+<script src="js/script.js"></script>
+
+
+</body>
+</html>

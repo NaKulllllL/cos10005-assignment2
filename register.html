@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Urban Fanny restaurant discovery and reservation platform">
+  <title>Register | Urban Fanny</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><img src="images/logo.svg" alt="Urban Fanny logo"><span>Urban Fanny</span></a>
+  <nav aria-label="Main navigation">
+    <a href="index.html" data-page="index">Home</a>
+    <a href="restaurants.html" data-page="restaurants">Restaurants</a>
+    <a href="recommend.html" data-page="recommend">Recommend</a>
+    <a href="register.html" data-page="register" class="active">Register</a>
+    <a href="reservation.html" data-page="reservation">Reserve</a>
+    <a href="bill.html" data-page="bill">Bill</a>
+  </nav>
+</header>
+<main>
+<section class="page-title"><p class="eyebrow">Join Urban Fanny</p><h1>Register</h1><p>Create a front-end account profile. This demo validates input using JavaScript only.</p></section>
+<section class="form-shell"><form id="registerForm" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php" method="post" novalidate>
+<label for="username">Username</label><input id="username" name="username" type="text"><span class="field-error" id="usernameError"></span>
+<label for="email">Email address</label><input id="email" name="email" type="email"><span class="field-error" id="emailError"></span>
+<label for="phone">Phone number</label><input id="phone" name="phone" type="text"><span class="field-error" id="phoneError"></span>
+<label for="password">Password</label><input id="password" name="password" type="password"><span class="field-error" id="passwordError"></span>
+<label for="confirmPassword">Confirm password</label><input id="confirmPassword" name="confirmPassword" type="password"><span class="field-error" id="confirmPasswordError"></span>
+<fieldset><legend>Gender</legend><label><input type="radio" name="gender" value="female"> Female</label><label><input type="radio" name="gender" value="male"> Male</label><label><input type="radio" name="gender" value="other"> Other</label></fieldset><span class="field-error" id="genderError"></span>
+<label for="dietary">Dietary preferences</label><select id="dietary" name="dietary"><option value="">Choose one</option><option>Vegetarian</option><option>Halal-friendly</option><option>Seafood</option><option>No preference</option></select><span class="field-error" id="dietaryError"></span>
+<label for="country">Country/Region</label><select id="country" name="country"><option value="">Choose one</option><option>Australia</option><option>India</option><option>UAE</option><option>Other</option></select><span class="field-error" id="countryError"></span>
+<button class="btn" type="submit">Create account</button></form></section>
+</main>
+<footer class="site-footer">
+  <p>&copy; 2026 Urban Fanny. Student project for COS10005 Web Development.</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Urban Fanny restaurant discovery and reservation platform">
+  <title>Reservation | Urban Fanny</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><img src="images/logo.svg" alt="Urban Fanny logo"><span>Urban Fanny</span></a>
+  <nav aria-label="Main navigation">
+    <a href="index.html" data-page="index">Home</a>
+    <a href="restaurants.html" data-page="restaurants">Restaurants</a>
+    <a href="recommend.html" data-page="recommend">Recommend</a>
+    <a href="register.html" data-page="register">Register</a>
+    <a href="reservation.html" data-page="reservation" class="active">Reserve</a>
+    <a href="bill.html" data-page="bill">Bill</a>
+  </nav>
+</header>
+<main>
+<section class="page-title"><p class="eyebrow">Reserve a table</p><h1>Reservation</h1><p>Deposit updates automatically when you choose a restaurant.</p></section>
+<section class="form-shell"><form id="reservationForm" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php" method="post" novalidate>
+<label for="fullName">Full name</label><input id="fullName" name="fullName" type="text"><span class="field-error" id="fullNameError"></span>
+<label for="resEmail">Email address</label><input id="resEmail" name="resEmail" type="email"><span class="field-error" id="resEmailError"></span>
+<label for="resPhone">Phone number</label><input id="resPhone" name="resPhone" type="text"><span class="field-error" id="resPhoneError"></span>
+<label for="restaurantSelect">Restaurant</label><select id="restaurantSelect" name="restaurant"><option value="">Choose restaurant</option>
+<option value="Mallu Joint">Mallu Joint</option>
+<option value="Megma Premium Ice Cream">Megma Premium Ice Cream</option>
+<option value="Al Zaithoon Yamani Mandi &amp; Biriyani">Al Zaithoon Yamani Mandi &amp; Biriyani</option>
+<option value="Veggie Spot">Veggie Spot</option>
+<option value="Burger Lounge">Burger Lounge</option>
+<option value="Sea Foodie Restaurant">Sea Foodie Restaurant</option></select><span class="field-error" id="restaurantSelectError"></span>
+<label for="resDateTime">Reservation date and time</label><input id="resDateTime" name="resDateTime" type="datetime-local"><span class="field-error" id="resDateTimeError"></span>
+<label for="people">Number of people</label><input id="people" name="people" type="number" min="1"><span class="field-error" id="peopleError"></span>
+<label for="requests">Special requests</label><textarea id="requests" name="requests" rows="4"></textarea>
+<label for="depositAmount">Deposit amount</label><input id="depositAmount" name="depositAmount" type="text" readonly>
+<fieldset><legend>Deposit method</legend><label><input type="radio" name="paymentMethod" value="voucher"> Voucher</label><label><input type="radio" name="paymentMethod" value="online"> Online payment</label></fieldset><span class="field-error" id="paymentMethodError"></span>
+<div id="voucherBox" class="conditional"><label for="voucherCode">Voucher code</label><input id="voucherCode" name="voucherCode" type="text" placeholder="12 digits"><span class="field-error" id="voucherCodeError"></span></div>
+<div id="cardBox" class="conditional"><label for="cardNumber">Credit card number</label><input id="cardNumber" name="cardNumber" type="text" placeholder="15 or 16 digits"><span class="field-error" id="cardNumberError"></span></div>
+<label><input id="sameEmail" type="checkbox"> Billing email same as reservation email</label>
+<label for="billingEmail">Billing email</label><input id="billingEmail" name="billingEmail" type="email"><span class="field-error" id="billingEmailError"></span>
+<button class="btn" type="submit">Confirm reservation</button></form></section>
+</main>
+<footer class="site-footer">
+  <p>&copy; 2026 Urban Fanny. Student project for COS10005 Web Development.</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Urban Fanny restaurant discovery and reservation platform">
+  <title>Bill Calculator | Urban Fanny</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><img src="images/logo.svg" alt="Urban Fanny logo"><span>Urban Fanny</span></a>
+  <nav aria-label="Main navigation">
+    <a href="index.html" data-page="index">Home</a>
+    <a href="restaurants.html" data-page="restaurants">Restaurants</a>
+    <a href="recommend.html" data-page="recommend">Recommend</a>
+    <a href="register.html" data-page="register">Register</a>
+    <a href="reservation.html" data-page="reservation">Reserve</a>
+    <a href="bill.html" data-page="bill" class="active">Bill</a>
+  </nav>
+</header>
+<main>
+<section class="page-title"><p class="eyebrow">Bonus feature</p><h1>Estimated Bill Calculator</h1><p>Estimate total dining cost before reserving. This updates dynamically with JavaScript.</p></section>
+<section class="form-shell bill-layout"><form id="billForm">
+<label for="billRestaurant">Restaurant</label><select id="billRestaurant"><option value="">Choose restaurant</option>
+<option value="Mallu Joint">Mallu Joint</option>
+<option value="Megma Premium Ice Cream">Megma Premium Ice Cream</option>
+<option value="Al Zaithoon Yamani Mandi &amp; Biriyani">Al Zaithoon Yamani Mandi &amp; Biriyani</option>
+<option value="Veggie Spot">Veggie Spot</option>
+<option value="Burger Lounge">Burger Lounge</option>
+<option value="Sea Foodie Restaurant">Sea Foodie Restaurant</option></select>
+<label for="billPeople">Number of people</label><input id="billPeople" type="number" min="1" value="2">
+<label><input type="checkbox" id="addPremium"> Add premium dessert platter $18 pp</label>
+<label><input type="checkbox" id="addDrinks"> Add mocktail pairing $12 pp</label>
+</form><div id="billResult" class="result-card large" aria-live="polite"><h2>Estimated total</h2><p>Choose a restaurant to calculate.</p></div></section>
+</main>
+<footer class="site-footer">
+  <p>&copy; 2026 Urban Fanny. Student project for COS10005 Web Development.</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
